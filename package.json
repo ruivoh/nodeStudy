@@ -1,0 +1,35 @@
+{
+  "name": "xpto",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "babel-node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "test-integration": "mocha --opts test/integration/mocha.opts test/integration/**/*.js",
+    "test-unit": "mocha --opts test/unit/mocha.opts test/unit/**/*.js",
+    "lint": "eslint **/*.js",
+    "lint:fix": "eslint **/*.js --fix"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-preset-env": "^1.1.8",
+    "chai": "^3.5.0",
+    "eslint": "^3.13.0",
+    "eslint-config-airbnb": "^14.0.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^3.0.2",
+    "eslint-plugin-react": "^6.9.0",
+    "mocha": "^3.2.0",
+    "supertest": "^2.0.1",
+    "testdouble": "^1.11.0"
+  },
+  "dependencies": {
+    "body-parser": "^1.16.0",
+    "express": "^4.14.0",
+    "sequelize": "^3.29.0",
+    "sqlite3": "^3.1.8"
+  }
+}
